@@ -14,6 +14,10 @@ local sources = {
     [3351674303] = {
         "Driving Empire",
         "https://raw.githubusercontent.com/houjk2/Boosthub/main/boostexecutables/Driving%20Empire.lua"
+    },
+    [171391948] = {
+        "Vehicle Simulator",
+        "https://raw.githubusercontent.com/houjk2/Boosthub/main/boostexecutables/Vehicle%20Simulator"
     }
 }
 
