@@ -73,6 +73,11 @@ tabCredits:Label("Made by RoSploits with the Bleklib library")
 tabCredits:Button("Copy Channel Link", function() 
     pcall(function()
         setclipboard("https://www.youtube.com/channel/UCOe-TPSJcvGlutJ40fWvXlw")
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Copied Channel Link",
+            Text = "https://www.youtube.com/channel/UCOe-TPSJcvGlutJ40fWvXlw",
+            Duration = 3
+        })
     end)
 end)
 
