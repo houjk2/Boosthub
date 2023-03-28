@@ -1,7 +1,8 @@
 
+
 local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
 local placeid = game.PlaceId
-
+print(placeid)
 local sources = {
     [4566572536] = {
         "Vehicle Legends",
@@ -36,6 +37,10 @@ function executesource()
             loadstring(game:HttpGet(v[2]))()
         end
     end
+    
+    if game:GetService("Workspace"):FindFirstChild("Waterfall") and game:GetService("Workspace"):FindFirstChild("Road") then 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/houjk2/Boosthub/main/boostexecutables/Ultimate%20Driving.lua"))()
+    end
 end
 
 function getgamename()
@@ -43,6 +48,10 @@ function getgamename()
         if i == placeid then 
             return v[1]
         end
+    end
+    
+    if game:GetService("Workspace"):FindFirstChild("Waterfall") and game:GetService("Workspace"):FindFirstChild("Road") then 
+        return "Ultimate Driving"
     end
     
     return "Universal"
@@ -71,13 +80,27 @@ if sources[placeid] then
         end
     end)
 else 
-    tabBoost:Button("Universal Boost (Coming Soon)", function()
-        game:GetService("StarterGui"):SetCore("SendNotification", {
-            Title = "Coming Soon",
-            Text = "Universal Boost is not yet a function, work in progress",
-            Duration = 3
-        })
-    end)
+    -- Ultimate Driving
+    if game:GetService("Workspace"):FindFirstChild("Waterfall") and game:GetService("Workspace"):FindFirstChild("Road") then 
+        tabBoost:Button("Boost!", function()
+            local succ, err = pcall(function()
+                executesource()
+            end)
+            
+            if err then 
+                print("Car Boost ERROR:", err)
+            end
+        end)
+    
+    else 
+        tabBoost:Button("Universal Boost (Coming Soon)", function()
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Coming Soon",
+                Text = "Universal Boost is not yet a function, work in progress",
+                Duration = 3
+            })
+        end)
+    end
 end
 
 tabCredits:Label("Made by RoSploits with the Bleklib library")
@@ -92,4 +115,5 @@ tabCredits:Button("Copy Channel Link", function()
         })
     end)
 end)
+
 
