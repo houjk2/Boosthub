@@ -17,8 +17,11 @@ local sources = {
     },
     [171391948] = {
         "Vehicle Simulator",
-        "https://raw.githubusercontent.com/houjk2/Boosthub/main/boostexecutables/Vehicle%20Simulator"
-    }
+        "https://raw.githubusercontent.com/houjk2/Boosthub/main/boostexecutables/Vehicle%20Simulator.lua"
+    },
+    [1554960397] = {
+        "Car Dealership Tycoon",
+        "https://raw.githubusercontent.com/houjk2/Boosthub/main/boostexecutables/Car%20Dealership.lua"
 }
 
 
