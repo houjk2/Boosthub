@@ -22,6 +22,10 @@ local sources = {
     [1554960397] = {
         "Car Dealership Tycoon",
         "https://raw.githubusercontent.com/houjk2/Boosthub/main/boostexecutables/Car%20Dealership.lua"
+    },
+    [54865335] = {
+        "Ultimate Driving",
+        "https://raw.githubusercontent.com/houjk2/Boosthub/main/boostexecutables/Ultimate%20Driving.lua"
     }
 }
 
