@@ -22,6 +22,7 @@ local sources = {
     [1554960397] = {
         "Car Dealership Tycoon",
         "https://raw.githubusercontent.com/houjk2/Boosthub/main/boostexecutables/Car%20Dealership.lua"
+    }
 }
 
 
